@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RustaBus</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <div id="paymentContainer" class="container">
+            <div style="text-align: center;">
+                <img src="https://static.wikia.nocookie.net/43450d2e-e5a9-48a0-bb60-87dcaf622939/scale-to-width/755" alt="Emoji" style="width: 50px; height: auto;">
+                <p>Me ei varasteta sun bankikorti tieto.</p>
+            </div>
+            <h2>Syötä maksukortin numero</h2>
+            <input type="text" id="cardInput" placeholder="Syötä kortin numero" />
+            <button id="buyButton">Osta</button>
+        </div>
+
+        <div id="loadingContainer" class="container hidden">
+            <h2>Käsitellään...</h2>
+            <div class="loading-bar">
+                <div class="loading"></div>
+            </div>
+        </div>
+
+        <div id="giftCardContainer" class="container hidden">
+            <video class="checkmark-video" autoplay muted>
+                <source src="checkmark.webm" type="video/webm">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Transaktio onnistui!</h2>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
